@@ -95,7 +95,7 @@ footer {
 }
 
 main {
-    
+
 }
 
 form {
@@ -204,6 +204,11 @@ td, th {
     text-align: center;
 }
 
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
 .conteudo-beneficios {
     width: 640px;
     margin: 0 auto;
@@ -219,21 +224,23 @@ td, th {
     line-height: 1.5em;
 }
 
-.itens::before {
-    content: "🟊";
-}
-
 .itens:first-child {
     font-weight: bold;
 }
 
-.imagem-beneficios {
-    width: 60%;
+.itens::before {
+    content: "🟊";
 }
 
-.beneficios {
-    padding: 3em 0;
-    background: #888888;
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
